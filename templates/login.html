@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block body %}
+{% load crispy_forms_tags %}
+    
+
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1>Login</h1>
+            <hr>
+            <form method="post">
+        {% csrf_token %}
+        {{form|crispy}}
+
+         
+
+    
+    <button class="btn btn-lg btn-primary btn-block" type="submit" style="cursor: pointer;">Sign in</button>
+    <p class="mt-5 mb-3 text-muted" style="text-align:center;">&copy; 2023-2024</p>
+    </form>
+        </div>
+    </div>
+
+    
+
+{% endblock body %}
+```

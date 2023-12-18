@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container" style="text-align:center;">
+          <h1 class="display-3">Welcome Blog Page</h1><hr>
+          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+          <p class="mt-5 mb-3 text-muted" style="text-align:center;">&copy; 2023-2024</p>
+        </div>
+      </div>
+
+      
+
+    </main>
+
+    
+
+
+<p>
+{%if request.user.is_authenticated %}
+    succes {{request.user.username}}
+{%else%}
+    not succes.
+{%endif%}
+</p>
+
+{% endblock body %}
