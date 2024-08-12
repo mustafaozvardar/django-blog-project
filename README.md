@@ -1,6 +1,6 @@
 # 📝 Django Blog Project
 
-This is a simple blog application built with Django. It allows users to create, edit, and delete blog posts. The project also integrates with CKEditor for rich text editing and uses Crispy Forms for better form rendering.
+This is a blog application built with Django. It allows users to create, edit, and delete blog posts. The project also integrates with CKEditor for rich text editing and uses Crispy Forms for better form rendering.
 
 ## Features ✨
 
